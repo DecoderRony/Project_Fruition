@@ -1,0 +1,117 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.8;
+	height: 100%;
+
+}
+
+#top_nav{
+
+	font-size: 18px;
+}
+
+
+.w3-bar .w3-button{
+	padding: 16px;
+}
+
+#mySidebar{
+	animation-duration: 0.3s;
+}
+
+#hm-contnt{
+	margin-top: 2rem;
+}
+
+.bgimg-1{
+	background-image: url("./images/mac.jpg");
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 670px;
+    width: 100%;
+
+  }
+
+
+
+#small{
+	text-align:center;
+	padding-top: 10px;	
+}
+
+#small-head{
+	text-align: center;
+	margin-top: -16rem;
+}
+
+#login-bttn{
+	font-size: 20px;
+	width: 12rem;
+	margin-top: 3rem;
+	
+
+}
+
+#about{
+	margin-top: -3rem;
+}
+
+/*contact icon styles heres*/
+#mail-ico{
+	margin-left: 17rem;
+	
+}
+
+#mail{
+	margin-left: 25rem;
+	margin-top: -4.8rem;
+}
+
+#mail a{
+	text-decoration: none;
+	color: green;
+}
+
+
+
+#call-ico{
+	margin-left: 17rem;
+
+}
+
+#call{
+	margin-left: 25rem;
+	margin-top: -4.8rem;
+}
+/*END*/
+
+/*SOCIAL MEDIA ICONS*/
+#social-mdia{
+	font-size: 55px;
+}
+
+#linkdin{
+	padding-left: 15px;
+}
+
+#insta{
+	padding-left: 15px;
+}
+
+#git{
+	padding-left: 15px;
+}
+/*END*/
+
+/*CONTACT SECTION*/
+.bgimg-2{
+	background-image: url(./images/contct.jpg);
+	background-position: center;
+    background-size: cover;
+}
+
+input[type=text]{
+	width:40rem;
+	margin-left:25rem;
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NSEC | INFO DESK</title>
+	<link rel="icon" type="text/css" href="./css/images/nsec-logo.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/index-small.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script type="text/javascript" src="./js/index.js"></script>
+
+
+</head>
+<body>
+
+	<!-- NAVBAR TOP FOR LARGE SCREENS -->
+	<div class="w3-top" id="top_nav">
+		<div class="w3-bar w3-white w3-card">
+			<a href="#home" class="w3-bar-item w3-button w3-wide">NSEC</a>
+			<!-- NAV ON LEFT -->
+		<div class="w3-right w3-hide-small">
+			<a href="#about" class="w3-bar-item w3-button"><i class="fa fa-align-justify"></i> ABOUT</a>
+			<a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+			<a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+
+		</div>
+
+		 <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+		</div>
+	</div>
+
+	<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none;" id="mySidebar">
+  <span class="w3-button w3-large" onclick="w3_close()"><strong>X</strong></span>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
+</nav>
+
+
+<header class= "bgimg-1 w3-display-container w3-grayscale-min" id="home">
+	<div class="w3-display-left w3-text-white" style="padding: 48px;">
+	<div id="hm-contnt">
+	<span class="w3-jumbo w3-hide-small">NSEC CR INFO DESK</span><br>
+	<div class="w3-xlarge w3-hide-large w3-hide-medium" id="small-head">NSEC CR INFO DESK</div><br>
+	<div class="w3-large w3-hide-small">An Information Desk For The Help Of Students</div>
+	<div class="w3-large w3-hide-large w3-hide-medium" id="small">An Information Desk For The Help Of Students</div>
+	<a href="login.php" class="w3-button w3-white w3-opacity w3-padding-large  w3-hover-opacity-off w3-hide-small" id="login-bttn">Login</a>
+	<div class="w3-center w3-hide-medium w3-hide-large">
+	<a href="login.php" class="w3-button w3-white w3-opacity-min w3-padding-large " id="login-bttn">Login</a>
+	</div>
+
+    </div>
+    </div>
+</header>
+
+<!--ABOUT SECTION-->
+<div class="w3-container" style="padding: 130px 16px" id="about">
+	<h1 class="w3-center">ABOUT THE SITE</h1>
+	<p class="w3-center w3-xlarge">Features of our site</p>
+	<p class="w3-large">This site is basically aimed to get students updated about their department's information shared by their CR.
+	CR's can login using their own ID and Password and can update any kind of information they want to share. Student's will get a mail
+	as the information gets updated and they can visit the site and check their particular departments information just on a single tap. </p>
+</div>
+
+<!--TEAM CONTENT SECTION-->
+<div class="w3-container" style="padding: 130px 16px" id="team">
+	<h1 class="w3-center">OUR AMAZING TEAM</h1>
+	<p class="w3-center w3-xlarge">The ones who have worked on this site</p>
+	<div class="w3-row-padding w3-grayscale-min" style="margin-top:64px">
+    <div class="w3-col l3 m4 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./css/images/Arpit.jpg"  style="width:100%;">
+        <div class="w3-container">
+          <h3>Arpit Das</h3>
+          <p class="w3-opacity">Founder & Designer</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="w3_open_contct1()"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+   
+
+     <div class="w3-col l3 m4 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./css/images/ryan.jpg"  style="width:100%;">
+        <div class="w3-container">
+          <h3>Ryan Das</h3>
+          <p class="w3-opacity">Co-Founder & Developer</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="w3_open_contct2()"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+     
+</div>
+
+   
+
+     <div class="w3-col l3 m4 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./css/images/Aman.jpg"  style="width:100%;">
+        <div class="w3-container">
+          <h3>Aman</h3>
+          <p class="w3-opacity">Back-end Developer</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="w3_open_contct3()"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    
+   
+
+     <div class="w3-col l3 m4 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./css/images/Kundan.jpg"  style="width:100%;">
+        <div class="w3-container">
+          <h3>Kundan</h3>
+          <p class="w3-opacity">Front-end Developer</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="w3_open_contct4()"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+ 
+            
+</div>
+</div>
+<!--END--->
+
+<!--MENU SECTION ----->
+ 
+
+ <div id="menu1" class="w3-modal">
+      <div class="w3-modal-content w3-animate-zoom w3-white">
+        <div class="w3-container  w3-display-container">
+          <span class="w3-button w3-display-topright w3-large" onclick="w3_close_contct1()"><strong>X</strong></span><br>
+        </div>
+        <div class="w3-container w3-padding-large w3-hide-small">
+          <p id="mail-ico"><i class="material-icons w3-jumbo w3-padding-large">email</i><p id="mail">Email: <a href="mailto:arpitdas118@gmail.com">arpitdas118@gmail.com</a></p></p>
+          <p id="call-ico"><i class="material-icons w3-jumbo w3-padding-large">phone</i><p id="call">Call: +91 7007114002</p></p>
+        </div>
+
+        <div class="w3-container w3-padding-large w3-hide-medium w3-hide-large w3-center">
+          <p><i class="material-icons w3-xxlarge w3-padding-large">email</i><p id="mail-sm">Email: <a href="mailto:arpitdas118@gmail.com">arpitdas118@gmail.com</a></p></p>
+          <p><i class="material-icons w3-xxlarge w3-padding-large">phone</i><p>Call: +91 7007114002</p></p>
+        </div>
+
+        <div class="w3-container w3-center " id="social-mdia"><a href="https://www.facebook.com/rony.das.587606" class="w3-hover-text-green"><i class="fa fa-facebook-square"></i></a>
+        <a href="https://linkedin.com/in/arpitdaskolkata" class="w3-hover-text-green" id="linkdin"><i class="fa fa-linkedin-square  "></i></a>
+        <a href="https://www.instagram.com/arpit__das/" class="w3-hover-text-green" id="insta"><i class="fa fa-instagram"></i></a>
+        <a href="https://github.com/DecoderRony" class="w3-hover-text-green" id="git"><i class="fa fa-github"></i></a>
+            </div>
+
+    </div>
+</div>
+
+ <div id="menu2" class="w3-modal">
+      <div class="w3-modal-content w3-animate-zoom w3-white">
+        <div class="w3-container  w3-display-container">
+          <span class="w3-button w3-display-topright w3-large" onclick="w3_close_contct2()"><strong>X</strong></span><br>
+        </div>
+        <div class="w3-container w3-padding-large w3-hide-small">
+          <p id="mail-ico"><i class="material-icons w3-jumbo w3-padding-large">email</i><p id="mail">Email: <a href="mailto:arpitdas118@gmail.com">ryandas@protonmail.com</a></p></p>
+          <p id="call-ico"><i class="material-icons w3-jumbo w3-padding-large">phone</i><p id="call">Call: +91 9505177758</p></p>
+        </div>
+
+        <div class="w3-container w3-padding-large w3-hide-medium w3-hide-large w3-center">
+          <p><i class="material-icons w3-xxlarge w3-padding-large">email</i><p id="mail-sm">Email: <a href="mailto:ryandas@protonmail.com">ryandas@protonmail.com</a></p></p>
+          <p><i class="material-icons w3-xxlarge w3-padding-large">phone</i><p>Call: +91 9505177758</p></p>
+        </div>
+
+        <div class="w3-container w3-center " id="social-mdia"><a href="https://www.facebook.com/rony.das.587606" class="w3-hover-text-green"><i class="fa fa-facebook-square"></i></a>
+        <a href="https://linkedin.com/in/arpitdaskolkata" class="w3-hover-text-green" id="linkdin"><i class="fa fa-linkedin-square  "></i></a>
+        <a href="https://www.instagram.com/arpit__das/" class="w3-hover-text-green" id="insta"><i class="fa fa-instagram"></i></a>
+        <a href="https://github.com/DecoderRony" class="w3-hover-text-green" id="git"><i class="fa fa-github"></i></a>
+            </div>
+
+    </div>
+  </div>
+
+
+  <div id="menu3" class="w3-modal">
+      <div class="w3-modal-content w3-animate-zoom w3-white">
+        <div class="w3-container  w3-display-container">
+          <span class="w3-button w3-display-topright w3-large" onclick="w3_close_contct3()"><strong>X</strong></span><br>
+        </div>
+        <div class="w3-container w3-padding-large w3-hide-small">
+          <p id="mail-ico"><i class="material-icons w3-jumbo w3-padding-large">email</i><p id="mail">Email: <a href="mailto:arpitdas118@gmail.com">arpitdas118@gmail.com</a></p></p>
+          <p id="call-ico"><i class="material-icons w3-jumbo w3-padding-large">phone</i><p id="call">Call: +91 6205193823</p></p>
+        </div>
+
+        <div class="w3-container w3-padding-large w3-hide-medium w3-hide-large w3-center">
+          <p><i class="material-icons w3-xxlarge w3-padding-large">email</i><p id="mail-sm">Email: <a href="mailto:arpitdas118@gmail.com">arpitdas118@gmail.com</a></p></p>
+          <p><i class="material-icons w3-xxlarge w3-padding-large">phone</i><p>Call: +91 6205193823</p></p>
+        </div>
+
+        <div class="w3-container w3-center " id="social-mdia"><a href="https://www.facebook.com/rony.das.587606" class="w3-hover-text-green"><i class="fa fa-facebook-square"></i></a>
+        <a href="https://linkedin.com/in/arpitdaskolkata" class="w3-hover-text-green" id="linkdin"><i class="fa fa-linkedin-square  "></i></a>
+        <a href="https://www.instagram.com/arpit__das/" class="w3-hover-text-green" id="insta"><i class="fa fa-instagram"></i></a>
+        <a href="https://github.com/DecoderRony" class="w3-hover-text-green" id="git"><i class="fa fa-github"></i></a>
+            </div>
+
+    </div>
+</div>
+
+
+
+  <div id="menu4" class="w3-modal">
+      <div class="w3-modal-content w3-animate-zoom w3-white">
+        <div class="w3-container  w3-display-container">
+          <span class="w3-button w3-display-topright w3-large" onclick="w3_close_contct4()"><strong>X</strong></span><br>
+        </div>
+        <div class="w3-container w3-padding-large w3-hide-small">
+          <p id="mail-ico"><i class="material-icons w3-jumbo w3-padding-large">email</i><p id="mail">Email: <a href="mailto:arpitdas118@gmail.com">arpitdas118@gmail.com</a></p></p>
+          <p id="call-ico"><i class="material-icons w3-jumbo w3-padding-large">phone</i><p id="call">Call: +91 7070704137</p></p>
+        </div>
+
+        <div class="w3-container w3-padding-large w3-hide-medium w3-hide-large w3-center">
+          <p><i class="material-icons w3-xxlarge w3-padding-large">email</i><p id="mail-sm">Email: <a href="mailto:arpitdas118@gmail.com">arpitdas118@gmail.com</a></p></p>
+          <p><i class="material-icons w3-xxlarge w3-padding-large">phone</i><p>Call: +91 7070704137</p></p>
+        </div>
+
+        <div class="w3-container w3-center " id="social-mdia"><a href="https://www.facebook.com/rony.das.587606" class="w3-hover-text-green"><i class="fa fa-facebook-square"></i></a>
+        <a href="https://linkedin.com/in/arpitdaskolkata" class="w3-hover-text-green" id="linkdin"><i class="fa fa-linkedin-square  "></i></a>
+        <a href="https://www.instagram.com/arpit__das/" class="w3-hover-text-green" id="insta"><i class="fa fa-instagram"></i></a>
+        <a href="https://github.com/DecoderRony" class="w3-hover-text-green" id="git"><i class="fa fa-github"></i></a>
+            </div>
+
+    </div>
+</div>
+
+
+
+<!--MENU ENDS -->
+<!---------------------------------------------------------CONTACT SECTION--------------------------------------------------------->
+            <div class="w3-container w3-light-grey bgimg-2 w3-grayscale-min" style="padding:168px 16px" id="contact">
+            	<h1 class="w3-center w3-text-white" >CONTACT US</h1>
+            	<p class="w3-center w3-xlarge w3-text-white" >We are always open for suggestions and queries</p>
+
+            	 <form action="contact.php" method="post">
+      <p><input class="w3-input w3-border w3-transparent w3-text-white" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border w3-transparent w3-text-white" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border w3-transparent w3-text-white" type="text" placeholder="Message" required name="Message" id="message"></p>
+      <p class="w3-center">
+        <button class="w3-button w3-white" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+           </div>
+
+           <footer class="w3-center w3-black w3-container">
+           	<a href="#home"><i class="fa fa-arrow-up w3-text-white"></i></a>
+           	<p>Deve <i class="fa fa-heart w3-text-red"></i> ed by Team FruiTion</p>
+           </footer>
+
+
+</body>
+</html>
