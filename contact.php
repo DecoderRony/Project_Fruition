@@ -2,6 +2,8 @@
 $name = $_POST['Name'];
 $email = $_POST['Email'];
 $msg = $_POST['Message'];
+$freak = "freak";
+
 
 /*Connecting to Database*/
 $ip = "localhost";
