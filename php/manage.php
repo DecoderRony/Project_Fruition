@@ -9,5 +9,4 @@
 	    die("Connection to database refused"."\r\n".mysqli_connect_error());
 	}
 	}
-	return $connect;
 ?>
