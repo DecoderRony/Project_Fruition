@@ -1,11 +1,11 @@
 
-var myVar;
+var Load;
 
 function load_function(){
-	myVar = setTimeout (showPage, 2000);
+	Load = setTimeout (showPage, 3000);
 }
 
 function showPage(){
-	document.getElementById("load_tab").style.display = "none";
+	document.getElementById("load_bar").style.display = "none";
 	document.getElementById("main").style.display = "block";
 }

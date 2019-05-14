@@ -18,8 +18,14 @@ body{
   border-top: 16px solid #20FEA5;
   width: 120px;
   height: 120px;
-  -webkit-animation: spin 1s linear infinite;
+  -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
+}
+
+#load_tab{
+	font-size: 20px;
+	margin-top: 35%;
+	margin-left:-2%;
 }
 
 @-webkit-keyframes spin {
@@ -32,11 +38,6 @@ body{
   100% { transform: rotate(360deg); }
 }
 
-#load-tab{
-	margin-top: 30%;
-	margin-left:-2%;
-	font-size: 20px;
-}
 
 #top_nav{
 
@@ -145,6 +146,6 @@ body{
 }
 
 input[type=text]{
-	width:40rem;
+	width:40%;
 	margin-left:25rem;
 }
