@@ -5,11 +5,33 @@ input[type=text]{
 	margin-left: 1rem;
 }
 
+#loader{
+	left:55%;
+}
+
+#load_tab{
+	font-size: 20px;
+	margin-top: 120%;
+	margin-left:-3%;
+}
+
+
+
 }
 
 
 
 @media only screen and (min-width: 360px) and (max-width: 400px){
+	#loader{
+		left:55%;
+	}
+
+#load_tab{
+	font-size: 20px;
+	margin-top: 125%;
+	margin-left:-1%;
+}
+
 #mail-sm a{
 	text-decoration: none;
 	color: green;
@@ -21,9 +43,10 @@ input[type=text]{
 
 
 
+
 /*CONTACT SECTION*/
 .bgimg-2{
-	background-image: url(./images/contct.jpg);
+	background-image: url(../images/contct.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
     background-size: cover;
@@ -37,6 +60,15 @@ input[type=text]{
 }
 
 @media only screen and (min-width: 401px) and (max-width: 600px){
+	#loader{
+		left:55%;
+	}
+
+#load_tab{
+	font-size: 20px;
+	margin-top: 115%;
+	margin-left:1%;
+}
 
 input[type=text]{
 	width:22rem;
@@ -59,6 +91,14 @@ input[type=text]{
 
 @media only screen and (min-width: 639px) and (max-width: 670px)
 {
+
+   #load_tab{
+	font-size: 20px;
+	margin-top: 40%;
+	margin-left:-3%;
+}
+
+
 	#mail-ico{
 	margin-left: 4rem;
 	
@@ -99,31 +139,100 @@ input[type=text]{
 	margin-left: 9rem;
 }
 
+#load_tab{
+	font-size: 20px;
+	margin-top: 40%;
+	margin-left:-3%;
 }
 
 
-@media only screen and (min-width: 741px) and (max-width: 900px)
+}
+
+
+@media only screen and (min-width: 741px) and (max-width: 767px)
 {
 	input[type=text]{
 	width:30rem;
 	margin-left: 11rem;
 }
 
+#load_tab{
+	font-size: 20px;
+	margin-top: 80%;
+	margin-left:-3%;
 }
 
-@media only screen and (min-width: 905px) and (max-width: 1024px){
+
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:811px)
+{
+	input[type=text]{
+	width:30rem;
+	margin-left: 11rem;
+}
+
+#loader{
+	left:52%;
+}
+
+#load_tab{
+	font-size: 20px;
+	margin-top: 80%;
+	margin-left:-1%;
+}
+
+
+
+
+}
+
+@media only screen and (min-width: 812px) and (max-width:900px)
+{
+	input[type=text]{
+	width:30rem;
+	margin-left: 11rem;
+}
+
+#load_tab{
+	font-size: 20px;
+	margin-top: 40%;
+	margin-left:-3%;
+}
+
+
+
+
+}
+
+@media only screen and (min-width: 905px) and (max-width: 1200px){
 	input[type=text]{
 	width:30rem;
 	margin-left: 18rem;
 }
 
+#load_tab{
+	font-size: 20px;
+	margin-top: 80%;
+	margin-left:-3%;
 }
 
-@media only screen and (min-width: 1300px) and (max-width: 1336px){
+
+
+
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1400px){
 	input[type=text]{
 	width:40rem;
 	margin-left: 23.5rem;
 }
+
+
+
+
 
 }
 
