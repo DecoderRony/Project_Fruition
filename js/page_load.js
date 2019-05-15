@@ -2,7 +2,7 @@
 var Load;
 
 function load_function(){
-	Load = setTimeout (showPage, 3000);
+	Load = setTimeout (showPage, 1500);
 }
 
 function showPage(){

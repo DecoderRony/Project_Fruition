@@ -15,6 +15,12 @@ input[type=text]{
 	margin-left:-3%;
 }
 
+#login{
+	padding-top: 40%;
+}
+
+
+
 
 
 }
@@ -30,6 +36,10 @@ input[type=text]{
 	font-size: 20px;
 	margin-top: 125%;
 	margin-left:-1%;
+}
+
+#login{
+	padding-top: 45%;
 }
 
 #mail-sm a{
@@ -70,6 +80,11 @@ input[type=text]{
 	margin-left:1%;
 }
 
+#login{
+	padding-top: 45%;
+}
+
+
 input[type=text]{
 	width:22rem;
 	margin-left: 2rem;
@@ -80,6 +95,11 @@ input[type=text]{
 }
 
 @media only screen and (min-width: 605px) and (max-width: 638px){
+	#login{
+		padding-top: 45%;
+	}
+	
+
 	input[type=text]{
 	width:30rem;
 	margin-left: 5rem;
@@ -97,6 +117,11 @@ input[type=text]{
 	margin-top: 40%;
 	margin-left:-3%;
 }
+
+#login{
+	padding-top: 10%;
+}
+
 
 
 	#mail-ico{
@@ -145,6 +170,10 @@ input[type=text]{
 	margin-left:-3%;
 }
 
+#login{
+	padding-top: 5%;
+}
+
 
 }
 
@@ -161,6 +190,11 @@ input[type=text]{
 	margin-top: 80%;
 	margin-left:-3%;
 }
+
+#login{
+	padding-top: 5%;
+}
+
 
 
 
@@ -184,6 +218,10 @@ input[type=text]{
 	margin-left:-1%;
 }
 
+#login{
+	padding-top: 5%;
+}
+
 
 
 
@@ -202,6 +240,11 @@ input[type=text]{
 	margin-left:-3%;
 }
 
+#login{
+	padding-top: 5%;
+}
+
+
 
 
 
@@ -219,12 +262,20 @@ input[type=text]{
 	margin-left:-3%;
 }
 
+#login{
+	padding-top: 45%;
+}
+
 
 
 
 }
 
 @media only screen and (min-width: 1300px) and (max-width: 1400px){
+   #login{
+	   padding-top: 15%;
+   }
+
 	input[type=text]{
 	width:40rem;
 	margin-left: 23.5rem;

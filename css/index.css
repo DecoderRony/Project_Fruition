@@ -45,6 +45,10 @@ body{
 	font-size: 18px;
 }
 
+#login_bttn{
+	width: 150px;
+}
+
 #about{
 	scroll-behavior: smooth;
 }

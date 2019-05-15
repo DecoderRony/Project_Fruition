@@ -1,3 +1,12 @@
+/*LOGIN FUNCTION*/
+function w3_login_open(){
+	document.getElementById("login").style.display = "block";
+}
+
+function w3_login_close(){
+	document.getElementById("login").style.display = "none";
+}
+
 
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
