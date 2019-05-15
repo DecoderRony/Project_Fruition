@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script type="text/javascript" src="./js/index.js"></script>
     <script type="text/javascript" src="./js/page_load.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 
 </head>
@@ -29,7 +30,7 @@
 	<div class="w3-top" id="top_nav">
 		<div class="w3-bar w3-white w3-card">
 			<a href="#home" class="w3-bar-item w3-button w3-wide">NSEC</a>
-			<!-- NAV ON LEFT -->
+			<!-- NAV ON Right -->
 		<div class="w3-right w3-hide-small">
 			<a href="#about" class="w3-bar-item w3-button"><i class="fa fa-align-justify"></i> ABOUT</a>
 			<a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
@@ -277,6 +278,24 @@
            </footer>
     </div>
 
-
+    <!--JQUERY FOR SCROLL ANIMATION-->
+    <script>
+    $(function() {
+  $("#top_nav a, #mySidebar a").click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<!--JQUERY ENDS-->
+    
 </body>
 </html>
