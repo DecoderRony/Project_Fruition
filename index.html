@@ -134,7 +134,7 @@
       <div class="w3-card">
         <img src="./images/Kundan.jpg"  style="width:100%;">
         <div class="w3-container">
-          <h3>Kundan<p><input type="text" required placeholder="Name" class="w3-input w3-text-black w3-border"></p></h3>
+          <h3>Kundan Kumar</h3>
           <p class="w3-opacity">Front-end Developer</p>
           <p><button class="w3-button w3-light-grey w3-block" onclick="w3_open_contct4()"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
@@ -273,14 +273,35 @@
     </div>
       
      <div class="w3-container">
-      <a href="" class="w3-center w3-text-black" style="text-decoration: none; padding-top: 20px;">Forgot Password?</a><br>
-      <div><span class="w3-text-black">New Here?</span><a href="" class="w3-center w3-text-green w3-padding-small" style="text-decoration: none">Sign In</a></div>
+      <a href="" class="w3-center w3-text-black w3-hover-text-green" style="text-decoration: none; padding-top: 20px;">Forgot Password?</a><br>
+      <div><span class="w3-text-black">New Here?</span><a href="#" class="w3-center w3-text-green w3-padding-small" style="text-decoration: none" onclick="w3_open_signin(),w3_login_close()">Sign In</a></div>
      </div>
       
   </div>
 
 </div>
 <!--END-->
+
+<!--SIGN IN PAGE-->
+<div class="w3-center w3-modal" id="Signin">
+  <div class="w3-model-content w3-animate-zoom w3-white">
+      <div class="w3-container  w3-display-container">
+          <span class="w3-button w3-display-topright w3-large" onclick="w3_close_signin()"><strong>X</strong></span><br>
+      </div>
+      <div class="w3-container w3-padding-large">
+      <form action="../php/login.php" method="POST">
+      
+      <p><input type="text" required placeholder="Name" class="w3-input w3-text-black w3-border"></p>
+      <p><input type="text" required placeholder="College ID" class="w3-input w3-text-black w3-border"></p>
+      <p><input type="password" required placeholder="Password" class="w3-input w3-text-black w3-border"></p>
+      <p><input type="password" required placeholder="Re-enter Password" class="w3-input w3-text-black w3-border"></p>
+      <button class="w3-button w3-center w3-green w3-round-small" type="submit" id="login_bttn">Sign In</button>
+
+      </form>
+    </div>
+    </div>
+    </div>
+<!--ENDS-->
 
 <!---------------------------------------------------------CONTACT SECTION--------------------------------------------------------->
             <div class="w3-container w3-light-grey bgimg-2 w3-grayscale-min" style="padding:168px 16px" id="contact">

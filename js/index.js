@@ -7,6 +7,13 @@ function w3_login_close(){
 	document.getElementById("login").style.display = "none";
 }
 
+function w3_open_signin(){
+	document.getElementById("Signin").style.display = "block";
+}
+
+function w3_close_signin(){
+	document.getElementById("Signin").style.display = "none";
+}
 
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";

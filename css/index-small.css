@@ -2,7 +2,12 @@
 
 input[type=text]{
 	width:18rem;
-	margin-left: 1rem;
+	margin-left: 0rem;
+}
+
+input[type=password]{
+	width:18rem;
+	margin-left:0rem;
 }
 
 #loader{
@@ -16,6 +21,10 @@ input[type=text]{
 }
 
 #login{
+	padding-top: 40%;
+}
+
+#Signin{
 	padding-top: 40%;
 }
 
@@ -39,6 +48,10 @@ input[type=text]{
 }
 
 #login{
+	padding-top: 45%;
+}
+
+#Signin{
 	padding-top: 45%;
 }
 
@@ -67,9 +80,16 @@ input[type=text]{
 	margin-left: 1rem;
 }
 
+input[type=password]{
+	width:20rem;
+	margin-left:1rem;
 }
 
-@media only screen and (min-width: 401px) and (max-width: 600px){
+}
+
+
+
+@media only screen and (min-width: 401px) and (max-width: 567px){
 	#loader{
 		left:55%;
 	}
@@ -84,12 +104,53 @@ input[type=text]{
 	padding-top: 45%;
 }
 
+#Signin{
+	padding-top: 45%;
+}
+
 
 input[type=text]{
 	width:22rem;
 	margin-left: 2rem;
 }
 
+input[type=password]{
+	width:22rem;
+	margin-left:2rem;
+}
+
+
+}
+
+@media only screen and (min-width: 568px) and (max-width: 600px){
+	#loader{
+		left:55%;
+	}
+
+#load_tab{
+	font-size: 20px;
+	margin-top: 115%;
+	margin-left:1%;
+}
+
+#login{
+	padding-top: 5%;
+}
+
+#Signin{
+	padding-top: 1%;
+}
+
+
+input[type=text]{
+	width:22rem;
+	margin-left: 6rem;
+}
+
+input[type=password]{
+	width:22rem;
+	margin-left:2rem;
+}
 
 
 }
@@ -98,11 +159,20 @@ input[type=text]{
 	#login{
 		padding-top: 45%;
 	}
+
+	#Signin{
+		padding-top: 45%;
+	}
 	
 
 	input[type=text]{
 	width:30rem;
 	margin-left: 5rem;
+}
+
+input[type=password]{
+	width:30rem;
+	margin-left:5rem;
 }
 
 }
@@ -119,7 +189,11 @@ input[type=text]{
 }
 
 #login{
-	padding-top: 10%;
+	padding-top: 2%;
+}
+
+#Signin{
+	padding-top: 2%;
 }
 
 
@@ -156,12 +230,22 @@ input[type=text]{
 	margin-left: 6rem;
 }
 
+input[type=password]{
+	width:30rem;
+	margin-left:6rem;
+}
+
 }
 
 @media only screen and (min-width: 671px) and (max-width: 740px){
 	input[type=text]{
 	width:30rem;
 	margin-left: 9rem;
+}
+
+input[type=password]{
+	width:30rem;
+	margin-left:9rem;
 }
 
 #load_tab{
@@ -171,6 +255,10 @@ input[type=text]{
 }
 
 #login{
+	padding-top: 5%;
+}
+
+#Signin{
 	padding-top: 5%;
 }
 
@@ -185,6 +273,11 @@ input[type=text]{
 	margin-left: 11rem;
 }
 
+input[type=password]{
+	width:30rem;
+	margin-left:11rem;
+}
+
 #load_tab{
 	font-size: 20px;
 	margin-top: 80%;
@@ -192,6 +285,10 @@ input[type=text]{
 }
 
 #login{
+	padding-top: 5%;
+}
+
+#Signin{
 	padding-top: 5%;
 }
 
@@ -208,6 +305,11 @@ input[type=text]{
 	margin-left: 11rem;
 }
 
+input[type=password]{
+	width:30rem;
+	margin-left:11rem;
+}
+
 #loader{
 	left:52%;
 }
@@ -219,9 +321,12 @@ input[type=text]{
 }
 
 #login{
-	padding-top: 5%;
+	padding-top: 50%;
 }
 
+#Signin{
+	padding-top: 50%;
+}
 
 
 
@@ -234,6 +339,11 @@ input[type=text]{
 	margin-left: 11rem;
 }
 
+input[type=password]{
+	width:30rem;
+	margin-left:11rem;
+}
+
 #load_tab{
 	font-size: 20px;
 	margin-top: 40%;
@@ -241,9 +351,12 @@ input[type=text]{
 }
 
 #login{
-	padding-top: 5%;
+	padding-top: 2%;
 }
 
+#Signin{
+	padding-top: 2%;
+}
 
 
 
@@ -256,6 +369,11 @@ input[type=text]{
 	margin-left: 18rem;
 }
 
+input[type=password]{
+	width:30rem;
+	margin-left:18rem;
+}
+
 #load_tab{
 	font-size: 20px;
 	margin-top: 80%;
@@ -263,7 +381,11 @@ input[type=text]{
 }
 
 #login{
-	padding-top: 45%;
+	padding-top: 25%;
+}
+
+#Signin{
+	padding-top: 25%;
 }
 
 
@@ -276,15 +398,19 @@ input[type=text]{
 	   padding-top: 15%;
    }
 
+   #Signin{
+	padding-top: 15%;
+}
+
 	input[type=text]{
 	width:40rem;
 	margin-left: 23.5rem;
 }
 
-
-
-
-
+input[type=password]{
+	width:40rem;
+	margin-left:23.5rem;
+}
 
 }
 
