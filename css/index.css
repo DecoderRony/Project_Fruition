@@ -64,6 +64,11 @@ body{
 
 #mySidebar{
 	animation-duration: 0.3s;
+	opacity: 0.9;
+}
+
+#nav-contnt{
+	opacity: 1;
 }
 
 #hm-contnt{

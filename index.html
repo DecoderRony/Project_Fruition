@@ -48,10 +48,12 @@
 
 	<!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none;" id="mySidebar">
+  <div id="nav-contnt">
   <span class="w3-button w3-large" onclick="w3_close()"><strong>X</strong></span>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
   <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
+  </div>
 </nav>
 
 
@@ -299,6 +301,11 @@
 
       </form>
     </div>
+    
+    <div class="w3-container">
+    <div><span class="w3-text-black">Already have an account?</span><a href="#" class="w3-center w3-text-green w3-padding-small" style="text-decoration: none" onclick="w3_login_open(),w3_close_signin()">Sign In</a></div>
+  </div>
+
     </div>
     </div>
 <!--ENDS-->
@@ -320,7 +327,7 @@
     </form>
            </div>
 
-           <footer class="w3-center w3-black w3-container">
+           <footer class="w3-center w3-black w3-container" id="footer_arrow">
            	<a href="#home"><i class="fa fa-arrow-up w3-text-white"></i></a>
            	<p>Deve <i class="fa fa-heart w3-text-red"></i> ed by Team FruiTion</p>
            </footer>
@@ -329,14 +336,14 @@
     <!--JQUERY FOR SCROLL ANIMATION-->
     <script>
     $(function() {
-  $("#top_nav a, #mySidebar a").click(function() {
+  $("#top_nav a, #mySidebar a, #footer_arrow a").click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 500);
+        }, 1000);
         return false;
       }
     }
