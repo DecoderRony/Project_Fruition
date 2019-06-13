@@ -55,3 +55,10 @@ function w3_close_contct4(){
 	document.getElementById('menu4').style.display = "none";
 }
 
+function open_forgotpass(){
+	document.getElementById('forgot_pass').style.display = "block";
+}
+
+function close_forgotpass(){
+	document.getElementById('forgot_pass').style.display = "none";
+}

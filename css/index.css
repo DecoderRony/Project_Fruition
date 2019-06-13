@@ -166,12 +166,3 @@ body{
 		background-attachment: fixed;
 }
 
-input[type=text]{
-	width:40%;
-	margin-left:25rem;
-}
-
-input[type=password]{
-	width:40%;
-	margin-left:25rem;
-}

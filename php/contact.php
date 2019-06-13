@@ -1,21 +1,23 @@
 <?php
-include 'manage.php';
+/*require './php/manage.php';*/
 
 $name = $_POST['Name'];
 $email = $_POST['Email'];
 $msg = $_POST['Message'];
+$date = date("Y/m/d");
 
 /*Connecting to DB*/
-$user = "id9494424_nsecinfo";
-$pass = "ronydas117";
-$dbname = "id9494424_nsec";
+$user = "root";
+$pass = "";
+$dbname = "test";
 
-$connect = coDB($user,$pass,$dbname);
+$connect = mysqli_connect("localhost",$user,$pass,$dbname);
 
 /*Sending Query/Suggestion Data to DB*/
-$insert = "INSERT INTO Contact SET Name = '$name', Email = '$email',Message = '$msg'";
+$insert = "INSERT INTO table1 SET Name = '$name', Email = '$email',Message = '$msg', Date = '$date'";
 
 $connect->query($insert);
+
 
 /*Sending Query to Team*/
 $to_team = "fruitioncore@gmail.com";
@@ -31,6 +33,7 @@ $message_to_usr = "We will review your query/suggestion and get back to you soon
 
 mail($email,$subject_usr,$message_to_usr,$header_usr);
 
-header('Location: ../index.html')
+
+header('Location: ../../Project_Fruition/index.html');
 ?>
 

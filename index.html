@@ -1,3 +1,6 @@
+<?php
+    setcookie("name","nsec");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,12 +11,14 @@
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
-    <link rel="stylesheet" type="text/css" href="./css/index-small.css">
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <link rel="stylesheet" type="text/css" href="./css/index-small.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script type="text/javascript" src="./js/index.js"></script>
-    <script type="text/javascript" src="./js/page_load.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
+  <script type="text/javascript" src="./js/page_load.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
 
 
 </head>
@@ -260,22 +265,34 @@
 
 <!--LOGIN PAGE-->
 <div class="w3-center w3-modal" id="login">
-  <div class="w3-model-content w3-animate-zoom w3-white">
-      <div class="w3-container  w3-display-container">
+  <div class="w3-model w3-animate-zoom w3-white">
+      <div class="w3-container  w3-display-container modal-body">
           <span class="w3-button w3-display-topright w3-large" onclick="w3_login_close()"><strong>X</strong></span><br>
       </div>
       <div class="w3-container w3-padding-large">
-      <form action="../php/login.php" method="POST">
+      <form action="./php/login.php" method="POST">
       
-      <p><input type="text" required placeholder="College ID" class="w3-input w3-text-black w3-border"></p>
-      <p><input type="text" required placeholder="Password" class="w3-input w3-text-black w3-border"></p>
-      <button class="w3-button w3-center w3-green w3-round-small" type="submit" id="login_bttn">Login</button>
+      <p><input type="text" required placeholder="College ID" name="id" class="w3-input w3-text-black w3-border"></p>
+      <p><input type="text" required placeholder="Password" name="pass" class="w3-input w3-text-black w3-border"></p>
+      <p>
+        <select name="dept" style="width: 150px;">
+          <option value="CSE">CSE</option>
+          <option value="IT">IT</option>
+          <option value="ECE">ECE</option>
+          <option value="EE">EE</option>
+          <option value="AEIE">AEIE</option>
+          <option value="ME">ME</option>
+          <option value="CE">CE</option>
+          <option value="BME">BME</option>
+        </select>
+      </p>
+      <button class="w3-button w3-center w3-green w3-round-small" type="submit" name="login_submit" id="login_bttn">Login</button>
 
       </form>
     </div>
       
      <div class="w3-container">
-      <a href="" class="w3-center w3-text-black w3-hover-text-green" style="text-decoration: none; padding-top: 20px;">Forgot Password?</a><br>
+      <a href="#" class="w3-center w3-text-black w3-hover-text-green" style="text-decoration: none; padding-top: 20px;" onclick="open_forgotpass(),w3_login_close()">Forgot Password?</a><br>
       <div><span class="w3-text-black">New Here?</span><a href="#" class="w3-center w3-text-green w3-padding-small" style="text-decoration: none" onclick="w3_open_signin(),w3_login_close()">Sign In</a></div>
      </div>
       
@@ -287,27 +304,62 @@
 <!--SIGN IN PAGE-->
 <div class="w3-center w3-modal" id="Signin">
   <div class="w3-model-content w3-animate-zoom w3-white">
-      <div class="w3-container  w3-display-container">
+      <div class="w3-container  w3-display-container modal-body">
           <span class="w3-button w3-display-topright w3-large" onclick="w3_close_signin()"><strong>X</strong></span><br>
       </div>
       <div class="w3-container w3-padding-large">
-      <form action="../php/signin.php" method="POST">
+      <form action="./php/signin.php" method="POST">
       
-      <p><input type="text" required placeholder="Name" class="w3-input w3-text-black w3-border"></p>
-      <p><input type="text" required placeholder="College ID" class="w3-input w3-text-black w3-border"></p>
-      <p><input type="password" required placeholder="Password" class="w3-input w3-text-black w3-border"></p>
-      <p><input type="password" required placeholder="Re-enter Password" class="w3-input w3-text-black w3-border"></p>
-      <button class="w3-button w3-center w3-green w3-round-small" type="submit" id="login_bttn">Sign In</button>
+      <p><input type="text" required placeholder="Name" name="name" class="w3-input w3-text-black w3-border"></p>
+      <p><input type="text" required placeholder="College ID" name="id" class="w3-input w3-text-black w3-border"></p>
+      <p><input type="password" required placeholder="Password" name="pass1" class="w3-input w3-text-black w3-border"></p>
+      <p><input type="password" required placeholder="Re-enter Password" name="pass2" class="w3-input w3-text-black w3-border"></p>
+      <p>
+        <select name="dept" style="width: 150px;">
+          <option value="CSE">CSE</option>
+          <option value="IT">IT</option>
+          <option value="ECE">ECE</option>
+          <option value="EE">EE</option>
+          <option value="AEIE">AEIE</option>
+          <option value="ME">ME</option>
+          <option value="CE">CE</option>
+          <option value="BME">BME</option>
+        </select>
+      </p>
+      <button class="w3-button w3-center w3-green w3-round-small" type="submit" name="signin" id="login_bttn">Sign In</button>
 
       </form>
     </div>
     
     <div class="w3-container">
-    <div><span class="w3-text-black">Already have an account?</span><a href="#" class="w3-center w3-text-green w3-padding-small" style="text-decoration: none" onclick="w3_login_open(),w3_close_signin()">Sign In</a></div>
+    <div><span class="w3-text-black">Already have an account?</span><a href="#" class="w3-center w3-text-green w3-padding-small" style="text-decoration: none" onclick="w3_login_open(),w3_close_signin()">Log In</a></div>
   </div>
 
     </div>
     </div>
+<!--ENDS-->
+
+<!--Forgot Pass Section-->
+<div class="w3-center w3-modal" id="forgot_pass" style="padding-top: 200px; width:100%;">
+  <div class="modal-dialogue">
+  <div class="model-content w3-animate-zoom w3-white w3-center">
+      <div class="w3-container  w3-display-container w3-center modal-body">
+          <span class="w3-button w3-display-topright w3-large" onclick="close_forgotpass()"><strong>X</strong></span><br>
+      </div>
+      <div class="w3-container w3-padding-large model-body">
+      <form action="./php/otp.php" method="POST">
+      
+      <p><input type="text" required placeholder="Enter your mail so that we can send an OTP" name='email' class="w3-input w3-text-black w3-border w3-padding-large"></p>
+      
+      <button class="w3-button w3-center w3-green w3-round-small" type="submit" name="login_submit" id="login_bttn">Send OTP</button>
+
+      </form>
+    </div>
+      
+    
+  </div> 
+  </div>
+  </div>
 <!--ENDS-->
 
 <!---------------------------------------------------------CONTACT SECTION--------------------------------------------------------->
@@ -315,16 +367,20 @@
             	<h1 class="w3-center w3-text-white" >CONTACT US</h1>
             	<p class="w3-center w3-xlarge w3-text-white" >We are always open for suggestions and queries</p>
 
-            	 <form action="./contact.php" method="post" id="contact_form">
+              <div class="w3-center">
+              <form action="./php/contact.php" method="post" id="contact_form">
+                <div class="w3-center" style="padding-left:0%;">
       <p><input class="w3-input w3-border w3-transparent w3-text-white" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-border w3-transparent w3-text-white" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-border w3-transparent w3-text-white" type="text" placeholder="Message" required name="Message" id="message"></p>
       <p class="w3-center">
+        </div>
         <button class="w3-button w3-white" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
     </form>
+          </div>
            </div>
 
            <footer class="w3-center w3-black w3-container" id="footer_arrow">

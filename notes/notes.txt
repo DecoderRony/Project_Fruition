@@ -1,0 +1,1 @@
+In Sign-up php file .... the javascript bit showed errors while using ""

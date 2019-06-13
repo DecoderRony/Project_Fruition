@@ -1,14 +1,6 @@
 @media only screen and (min-width: 300px) and (max-width: 359px){
 
-input[type=text]{
-	width:18rem;
-	margin-left: 0rem;
-}
 
-input[type=password]{
-	width:18rem;
-	margin-left:0rem;
-}
 
 #loader{
 	left:55%;
@@ -84,15 +76,7 @@ input[type=password]{
     background-size: cover;
 }
 
-input[type=text]{
-	width:20rem;
-	margin-left: 1rem;
-}
 
-input[type=password]{
-	width:20rem;
-	margin-left:1rem;
-}
 
 }
 
@@ -118,15 +102,7 @@ input[type=password]{
 }
 
 
-input[type=text]{
-	width:22rem;
-	margin-left: 2rem;
-}
 
-input[type=password]{
-	width:22rem;
-	margin-left:2rem;
-}
 
 .bgimg-1{
 	background-image: url("../images/mac.jpg");
@@ -160,15 +136,6 @@ input[type=password]{
 }
 
 
-input[type=text]{
-	width:22rem;
-	margin-left: 6rem;
-}
-
-input[type=password]{
-	width:22rem;
-	margin-left:6rem;
-}
 
 
 }
@@ -183,15 +150,7 @@ input[type=password]{
 	}
 	
 
-	input[type=text]{
-	width:30rem;
-	margin-left: 5rem;
-}
-
-input[type=password]{
-	width:30rem;
-	margin-left:5rem;
-}
+	
 
 }
 
@@ -243,28 +202,11 @@ input[type=password]{
 	margin-top: -4.8rem;
 }
 
-input[type=text]{
-	width:30rem;
-	margin-left: 6rem;
-}
-
-input[type=password]{
-	width:30rem;
-	margin-left:6rem;
-}
 
 }
 
 @media only screen and (min-width: 671px) and (max-width: 740px){
-	input[type=text]{
-	width:30rem;
-	margin-left: 9rem;
-}
-
-input[type=password]{
-	width:30rem;
-	margin-left:9rem;
-}
+	
 
 #load_tab{
 	font-size: 20px;
@@ -286,15 +228,7 @@ input[type=password]{
 
 @media only screen and (min-width: 741px) and (max-width: 767px)
 {
-	input[type=text]{
-	width:30rem;
-	margin-left: 11rem;
-}
-
-input[type=password]{
-	width:30rem;
-	margin-left:11rem;
-}
+	
 
 #load_tab{
 	font-size: 20px;
@@ -318,15 +252,7 @@ input[type=password]{
 
 @media only screen and (min-width: 768px) and (max-width:811px)
 {
-	input[type=text]{
-	width:30rem;
-	margin-left: 11rem;
-}
-
-input[type=password]{
-	width:30rem;
-	margin-left:11rem;
-}
+	
 
 #loader{
 	left:52%;
@@ -352,15 +278,7 @@ input[type=password]{
 
 @media only screen and (min-width: 812px) and (max-width:900px)
 {
-	input[type=text]{
-	width:30rem;
-	margin-left: 11rem;
-}
 
-input[type=password]{
-	width:30rem;
-	margin-left:11rem;
-}
 
 #load_tab{
 	font-size: 20px;
@@ -382,15 +300,7 @@ input[type=password]{
 }
 
 @media only screen and (min-width: 905px) and (max-width: 1290px){
-	input[type=text]{
-	width:30rem;
-	margin-left: 18rem;
-}
-
-input[type=password]{
-	width:30rem;
-	margin-left:18rem;
-}
+	
 
 #load_tab{
 	font-size: 20px;
@@ -417,17 +327,7 @@ input[type=password]{
 	padding-top: 10%;
 }
 
-	input[type=text]{
-	width:40rem;
-	margin-left: 23.5rem;
-}
-
-input[type=password]{
-	width:40rem;
-	margin-left:23.5rem;
-}
-
-
+	
 }
 
 @media only screen and (min-width: 905px) and (max-width: 1290px) and (min-height: 800px) and (max-height: 1366px){
@@ -439,15 +339,7 @@ input[type=password]{
 	 padding-top: 15%;
  }
  
-	 input[type=text]{
-	 width:40rem;
-	 margin-left: 13rem;
- }
- 
- input[type=password]{
-	 width:40rem;
-	 margin-left:13rem;
- }
+
 
  .bgimg-1{
 	background-image: url("../images/mac.jpg");
@@ -473,15 +365,7 @@ input[type=password]{
 	 padding-top: 15%;
  }
  
-	 input[type=text]{
-	 width:41rem;
-	 margin-left: 23.5rem;
- }
- 
- input[type=password]{
-	 width:41rem;
-	 margin-left:23.5rem;
- }
+	
  
  .bgimg-1{
 	background-image: url("../images/mac.jpg");
@@ -504,15 +388,7 @@ input[type=password]{
 
  /*FOR TABLETS*/
  @media only screen and (min-width: 905px) and (max-width: 1290px) and (min-height: 600px) and (max-height: 768px){
-	input[type=text]{
-	width:30rem;
-	margin-left: 18rem;
-}
-
-input[type=password]{
-	width:30rem;
-	margin-left:18rem;
-}
+	
 
 #load_tab{
 	font-size: 20px;
@@ -549,15 +425,7 @@ input[type=password]{
 
 @media only screen and (min-width: 768px) and (max-width:811px) and (min-height: 400px) and (max-height:1024px)
 {
-	input[type=text]{
-	width:30rem;
-	margin-left: 9rem;
-}
 
-input[type=password]{
-	width:30rem;
-	margin-left:9rem;
-}
 
 #loader{
 	left:52%;
@@ -599,15 +467,7 @@ input[type=password]{
 
 
 @media only screen and (min-width: 905px) and (max-width: 1290px) and (min-height: 600px) and (max-height: 768px){
-	input[type=text]{
-	width:30rem;
-	margin-left: 18rem;
-}
-
-input[type=password]{
-	width:30rem;
-	margin-left:18rem;
-}
+	
 
 #load_tab{
 	font-size: 20px;
@@ -674,15 +534,7 @@ input[type=password]{
 
 	}
 	
-	input[type=text]{
-		width:50rem;
-		margin-left: 23.5%;
-	}
-		
 	
-	input[type=password]{
-		width:50rem;
-		margin-left:23.5%;
 	}
 
 	#login{
