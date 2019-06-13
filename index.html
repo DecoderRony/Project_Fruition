@@ -270,7 +270,7 @@
           <span class="w3-button w3-display-topright w3-large" onclick="w3_login_close()"><strong>X</strong></span><br>
       </div>
       <div class="w3-container w3-padding-large">
-      <form action="./php/login.php" method="POST">
+      <form action="./php/register/login.php" method="POST">
       
       <p><input type="text" required placeholder="College ID" name="id" class="w3-input w3-text-black w3-border"></p>
       <p><input type="text" required placeholder="Password" name="pass" class="w3-input w3-text-black w3-border"></p>
@@ -308,7 +308,7 @@
           <span class="w3-button w3-display-topright w3-large" onclick="w3_close_signin()"><strong>X</strong></span><br>
       </div>
       <div class="w3-container w3-padding-large">
-      <form action="./php/signin.php" method="POST">
+      <form action="./php/register/signin.php" method="POST">
       
       <p><input type="text" required placeholder="Name" name="name" class="w3-input w3-text-black w3-border"></p>
       <p><input type="text" required placeholder="College ID" name="id" class="w3-input w3-text-black w3-border"></p>
@@ -347,7 +347,7 @@
           <span class="w3-button w3-display-topright w3-large" onclick="close_forgotpass()"><strong>X</strong></span><br>
       </div>
       <div class="w3-container w3-padding-large model-body">
-      <form action="./php/otp.php" method="POST">
+      <form action="./php/otp/send_otp.php" method="POST">
       
       <p><input type="text" required placeholder="Enter your mail so that we can send an OTP" name='email' class="w3-input w3-text-black w3-border w3-padding-large"></p>
       
@@ -368,7 +368,7 @@
             	<p class="w3-center w3-xlarge w3-text-white" >We are always open for suggestions and queries</p>
 
               <div class="w3-center">
-              <form action="./php/contact.php" method="post" id="contact_form">
+              <form action="./php/register/contact.php" method="post" id="contact_form">
                 <div class="w3-center" style="padding-left:0%;">
       <p><input class="w3-input w3-border w3-transparent w3-text-white" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-border w3-transparent w3-text-white" type="text" placeholder="Email" required name="Email"></p>
