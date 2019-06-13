@@ -35,15 +35,11 @@
 
                 $md5otp=md5($otp);
                 $sha1otp=sha1($md5otp);
-                $cryptotp=crypt($sha1otp,op);
+                $cryptotp=crypt($sha1otp,'op');
 
                 session_start();
                 $_SESSION['otp']=$cryptotp;
                 $_SESSION['email']=$email;
-            }
-            else
-            {
-                echo("Please enter your actual email address");
             }
         }
     }
