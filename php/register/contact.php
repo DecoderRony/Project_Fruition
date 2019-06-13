@@ -34,6 +34,6 @@ $message_to_usr = "We will review your query/suggestion and get back to you soon
 mail($email,$subject_usr,$message_to_usr,$header_usr);
 
 
-header('Location: ../../Project_Fruition/index.html');
+header('Location: ../../../Project_Fruition/index.html');
 ?>
 
