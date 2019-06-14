@@ -9,10 +9,9 @@
 
     if($result>0)
     {
-        echo($_SESSION['name']);
-        die();
+        header('Location: ../../cr_post.html');
     }
 
-    echo($_SESSION['name']);
+    header('Location: ../posting/display_post.php');
 
 ?>

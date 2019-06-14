@@ -33,7 +33,7 @@
          $connect->query($insert_db);
             echo("<script LANGUAGE = 'Javascript'>
             window.alert('Sign Up Successfull');
-            window.location.href = '../../Project_Fruition/index.html';
+            window.location.href = '../../index.html';
             </script>");
         
     }

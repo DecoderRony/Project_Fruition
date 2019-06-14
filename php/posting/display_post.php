@@ -12,7 +12,8 @@
 
     foreach($posts as $post)
     {
-        echo($post['Name']);
-        echo($post['Post']);
+        echo($post['Name']."<br>");
+        echo($post['Title']."<br>");
+        echo($post['Post']."<br>");
     }
 ?>
