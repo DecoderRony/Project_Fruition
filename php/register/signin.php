@@ -49,7 +49,7 @@
         {
             echo("<script LANGUAGE = 'Javascript'>
             window.alert('Password Missmatch');
-            window.location.href = '../../Project_Fruition/index.html';
+            window.location.href = '../../index.html';
             </script>");
         
         }
