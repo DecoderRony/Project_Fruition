@@ -18,5 +18,7 @@
         $stmt->bindValue(4,$department);
         $stmt->bindValue(5,$year);
         $stmt->execute();
+
+        header('Location: ../posting/display_post.php');
     }
 ?>
