@@ -14,7 +14,7 @@ $dbname = "test";
 $connect = mysqli_connect("localhost",$user,$pass,$dbname);
 
 /*Sending Query/Suggestion Data to DB*/
-$insert = "INSERT INTO table1 SET Name = '$name', Email = '$email',Message = '$msg', Date = '$date'";
+$insert = "INSERT INTO Contact SET Name = '$name', Email = '$email',Message = '$msg', Date = '$date'";
 
 $connect->query($insert);
 
