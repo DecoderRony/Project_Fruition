@@ -2,7 +2,7 @@
     setcookie("name","nsec");
 ?>
 <!DOCTYPE html>
-<html>
+<!-- <html> -->
 <head>
 	<title>NSEC | INFO DESK</title>
 	<link rel="icon" type="text/css" href="./images/nsec-logo.png">
@@ -274,20 +274,7 @@
       
       <p><input type="text" required placeholder="College ID" name="id" class="w3-input w3-text-black w3-border"></p>
       <p><input type="text" required placeholder="Password" name="pass" class="w3-input w3-text-black w3-border"></p>
-      <p>
-        <select name="dept" style="width: 150px;">
-          <option value="CSE">CSE</option>
-          <option value="IT">IT</option>
-          <option value="ECE">ECE</option>
-          <option value="EE">EE</option>
-          <option value="AEIE">AEIE</option>
-          <option value="ME">ME</option>
-          <option value="CE">CE</option>
-          <option value="BME">BME</option>
-        </select>
-      </p>
       <button class="w3-button w3-center w3-green w3-round-small" type="submit" name="login_submit" id="login_bttn">Login</button>
-
       </form>
     </div>
       
@@ -310,8 +297,10 @@
       <div class="w3-container w3-padding-large">
       <form action="./php/register/signin.php" method="POST">
       
-      <p><input type="text" required placeholder="Name" name="name" class="w3-input w3-text-black w3-border"></p>
+      <p><input type="text" required placeholder="First Name" name="fname" class="w3-input w3-text-black w3-border"></p>
+      <p><input type="text" required placeholder="Last Name" name="lname" class="w3-input w3-text-black w3-border"></p>
       <p><input type="text" required placeholder="College ID" name="id" class="w3-input w3-text-black w3-border"></p>
+      <p><input type="text" required placeholder="Email" name="email" class="w3-input w3-text-black w3-border"></p>
       <p><input type="password" required placeholder="Password" name="pass1" class="w3-input w3-text-black w3-border"></p>
       <p><input type="password" required placeholder="Re-enter Password" name="pass2" class="w3-input w3-text-black w3-border"></p>
       <p>
@@ -324,6 +313,14 @@
           <option value="ME">ME</option>
           <option value="CE">CE</option>
           <option value="BME">BME</option>
+        </select>
+      </p>
+      <p>
+        <select name="year" style="width: 150px;">
+          <option value="1">1st</option>
+          <option value="2">2nd</option>
+          <option value="3">3rd</option>
+          <option value="4">4th</option>>
         </select>
       </p>
       <button class="w3-button w3-center w3-green w3-round-small" type="submit" name="signin" id="login_bttn">Sign In</button>

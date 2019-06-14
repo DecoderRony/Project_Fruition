@@ -3,7 +3,6 @@
     {
         $college_id = $_POST['id'];
         $password = $_POST['pass'];
-        $department = $_POST['dept'];
 
         $id="root";
         $pass="";
@@ -17,7 +16,7 @@
         }
 
 
-        $sql = "SELECT Name,College_ID,Password,Department FROM signin WHERE College_ID=$college_id OR Password ='$password'";
+        $sql = "SELECT * FROM signin WHERE College_ID=$college_id OR Password ='$password'";
 
         $result = ($connect -> query($sql));
 
@@ -34,15 +33,16 @@
         {
             session_start();
 
-            $_SESSION['name'] = $check_row["Name"];
-            $_SESSION['id'] = $check_row["College_ID"];
-            $_SESSION['dept'] = $check_row["Department"];
+            $_SESSION['name'] = $check_row['First_Name'];
+            $_SESSION['id'] = $check_row['College_ID'];
+            $_SESSION['dept'] = $check_row['Department'];
+            $_SESSION['year'] = $check_row['Year'];
 
-            
+            require 'check_cr.php';
 
             echo("<script LANGUAGE = 'Javascript'>
             window.alert('Login Successfull');
-            window.location.href = ' ../php/print.php';
+            window.location.href = ' ../';
             </script>");
         }
         else if($row>0 && ($college_id==$check_row['College_ID'] && $password!=$check_row['Password']))
