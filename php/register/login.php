@@ -38,12 +38,11 @@
             $_SESSION['dept'] = $check_row['Department'];
             $_SESSION['year'] = $check_row['Year'];
 
-            require 'check_cr.php';
-
             echo("<script LANGUAGE = 'Javascript'>
             window.alert('Login Successfull');
-            window.location.href = ' ../';
             </script>");
+
+            require 'check_cr.php';
         }
         else if($row>0 && ($college_id==$check_row['College_ID'] && $password!=$check_row['Password']))
         {
