@@ -19,6 +19,8 @@
         $stmt->bindValue(5,$year);
         $stmt->execute();
 
+        require '../posting/send_mail.php';
+
         header('Location: ../posting/display_post.php');
     }
 ?>
