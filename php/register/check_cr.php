@@ -1,7 +1,7 @@
 <?php
     require '../connection.php';
 
-    $sql = "SELECT * FROM signin INNER JOIN CR as c WHERE ? = c.ID";
+    $sql = "SELECT * FROM signin INNER JOIN cr as c WHERE ? = c.ID";
     $stmt = $pdo->prepare($sql);
     $stmt->bindValue(1,$_SESSION['id']);
     $stmt->execute();
