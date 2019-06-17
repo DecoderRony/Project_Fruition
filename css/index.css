@@ -1,4 +1,4 @@
-body{
+body,h1,h2,h3{
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.8;
 	height: 100%;
@@ -42,7 +42,8 @@ body{
 
 #top_nav{
 
-	font-size: 18px;
+	font-size: 20px;
+
 }
 
 #login_bttn{
@@ -123,6 +124,11 @@ body{
 }
 
 #mail a{
+	text-decoration: none;
+	color: green;
+}
+
+#mail-sm a{
 	text-decoration: none;
 	color: green;
 }
