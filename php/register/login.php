@@ -3,11 +3,10 @@
     {
         $college_id = $_POST['id'];
         $password = $_POST['pass'];
-        $department = $_POST['dept'];
 
-        $id="root";
-        $pass="";
-        $dbname="test";
+        $id="id9494424_nsecinfo";
+        $pass="ronydas117";
+        $dbname="id9494424_nsec";
 
         $connect = mysqli_connect("localhost",$id,$pass,$dbname);
 
@@ -17,7 +16,7 @@
         }
 
 
-        $sql = "SELECT Name,College_ID,Password,Department FROM signin WHERE College_ID=$college_id OR Password ='$password'";
+        $sql = "SELECT * FROM signin WHERE College_ID=$college_id OR Password ='$password'";
 
         $result = ($connect -> query($sql));
 
@@ -34,16 +33,14 @@
         {
             session_start();
 
-            $_SESSION['name'] = $check_row["Name"];
-            $_SESSION['id'] = $check_row["College_ID"];
-            $_SESSION['dept'] = $check_row["Department"];
+            $_SESSION['name'] = $check_row['First_Name'];
+            $_SESSION['id'] = $check_row['College_ID'];
+            $_SESSION['dept'] = $check_row['Department'];
+            $_SESSION['year'] = $check_row['Year'];
 
             
 
-            echo("<script LANGUAGE = 'Javascript'>
-            window.alert('Login Successfull');
-            window.location.href = ' ../php/print.php';
-            </script>");
+            require '../register/check_cr.php';
         }
         else if($row>0 && ($college_id==$check_row['College_ID'] && $password!=$check_row['Password']))
         {
