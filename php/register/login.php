@@ -4,9 +4,9 @@
         $college_id = $_POST['id'];
         $password = $_POST['pass'];
 
-        $id="root";
-        $pass="";
-        $dbname="test";
+        $id="id9494424_nsecinfo";
+        $pass="ronydas117";
+        $dbname="id9494424_nsec";
 
         $connect = mysqli_connect("localhost",$id,$pass,$dbname);
 
@@ -38,11 +38,9 @@
             $_SESSION['dept'] = $check_row['Department'];
             $_SESSION['year'] = $check_row['Year'];
 
-            echo("<script LANGUAGE = 'Javascript'>
-            window.alert('Login Successfull');
-            </script>");
+            
 
-            require 'check_cr.php';
+            require '../register/check_cr.php';
         }
         else if($row>0 && ($college_id==$check_row['College_ID'] && $password!=$check_row['Password']))
         {

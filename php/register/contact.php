@@ -7,9 +7,9 @@ $msg = $_POST['Message'];
 $date = date("Y/m/d");
 
 /*Connecting to DB*/
-$user = "root";
-$pass = "";
-$dbname = "test";
+$user = "id9494424_nsecinfo";
+$pass = "ronydas117";
+$dbname = "id9494424_nsec";
 
 $connect = mysqli_connect("localhost",$user,$pass,$dbname);
 
@@ -34,6 +34,6 @@ $message_to_usr = "We will review your query/suggestion and get back to you soon
 mail($email,$subject_usr,$message_to_usr,$header_usr);
 
 
-header('Location: ../../../Project_Fruition/index.html');
+header('Location: ../../../index.html');
 ?>
 

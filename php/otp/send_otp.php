@@ -33,13 +33,15 @@
 
                 mail($email,$otp_sub,$otp,$otp_head);
 
-                $md5otp=md5($otp);
-                $sha1otp=sha1($md5otp);
-                $cryptotp=crypt($sha1otp,'op');
+                //$md5otp=md5($otp);
+                //$sha1otp=sha1($md5otp);
+                //$cryptotp=crypt($sha1otp,'op');
 
                 session_start();
-                $_SESSION['otp']=$cryptotp;
+                //$_SESSION['otp']=$cryptotp;
+                $_SESSION['otp']=$otp;
                 $_SESSION['email']=$email;
+                header('Location: ../../../otp_enter.html');
             }
         }
     }

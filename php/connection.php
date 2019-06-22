@@ -1,8 +1,8 @@
 <?php
     $host="localhost";
-    $user="root";
-    $dbpass="";
-    $dbname="test";
+    $user="id9494424_nsecinfo";
+    $dbpass="ronydas117";
+    $dbname="id9494424_nsec";
 
     /*Creating DSN*/
     $dsn = 'mysql:host='. $host .';dbname='. $dbname;

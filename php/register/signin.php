@@ -23,7 +23,7 @@
             {
                 echo("<script LANGUAGE = 'Javascript'>
                 window.alert('User Already Exists');
-                window.location.href = '../../Project_Fruition/index.html';
+                window.location.href = '../../../index.html';
                 </script>");
             }
         
